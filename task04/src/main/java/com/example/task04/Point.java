@@ -1,26 +1,16 @@
-package com.example.task01;
+package com.example.task04;
 
 /**
  * Класс точки на плоскости
  */
 public class Point {
-    int x;
-    int y;
+    final int x;
+    final int y;
 
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
-
-    /**
-     * "Вращает" точку относительно начала координат на 180 градусов
-     */
-    public void flip() {
-        int temp = x;
-        x = -y;
-        y = -temp;
-    }
-
     /**
      * Считает расстояние от текущей точки до переданной
      *
